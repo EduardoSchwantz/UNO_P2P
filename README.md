@@ -44,9 +44,8 @@ Verifique se o ufw está ativo com:
 
 Clone o projeto ou copie os arquivos:
 
-
 ```
-   git clone https://github.com/seu-usuario/uno-p2p.git
+   git clone https://github.com/EduardoSchwantz/UNO_P2P.git
 ```
 ```
    cd uno-p2p
