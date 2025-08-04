@@ -22,8 +22,35 @@ Esse projeto foi desenvolvimento em conjunto com os colegas Isabele Santos Scher
 2. Execute:
    ```powershell
    New-NetFirewallRule -DisplayName "UNO P2P TCP 5000" -Direction Inbound -LocalPort 5000 -Protocol TCP -Action Allow
-#No Ubuntu/Linux:
+▶️ No Ubuntu/Linux:
+
 sudo ufw allow 5000/tcp
 
 Verifique se o ufw está ativo com:
 sudo ufw status
+
+📥 Instalação
+Clone o projeto ou copie os arquivos:
+
+
+git clone https://github.com/seu-usuario/uno-p2p.git
+cd uno-p2p
+
+Certifique-se de ter os seguintes arquivos no mesmo diretório:
+   -main.py
+   -peer.py
+   -protocol.py
+   -utils.py
+
+###▶️ Como Executar o Jogo
+Cada jogador deve executar o jogo em uma máquina diferente ou em diferentes terminais com IPs distintos.
+
+##🔹 Passo 1: Executar o primeiro peer (host)
+python main.py
+   >Digite seu nome (ex: Alice)
+   >Escolha o host de escuta (0.0.0.0 ou localhost)
+   >Escolha a porta: 5000
+
+
+##🔹 Passo 2: Executar o segundo peer
+No segundo computador ou terminal:
