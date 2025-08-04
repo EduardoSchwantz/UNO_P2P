@@ -68,11 +68,15 @@ Para descobrir o ip da máquina utilize:
 
 ### ▶️ No Ubuntu/Linux:
 
-   ``` ip```
+```
+   ip
+```
 
 ### ▶️ No Windows:
 
-   ``` ipconfig```
+   ```
+   ipconfig
+```
 
 ## 🔹 Passo 1: Executar o primeiro peer (host)
 ```Powershell
