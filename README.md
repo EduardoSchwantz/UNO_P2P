@@ -1,7 +1,17 @@
 # 🃏 Jogo UNO em Arquitetura P2P (TCP Socket)
 
 Este projeto implementa uma versão simplificada do jogo UNO, com comunicação entre múltiplos jogadores via sockets TCP e arquitetura **peer-to-peer (P2P)**. O jogo permite que cada peer atue como jogador e servidor ao mesmo tempo.
-Esse projeto foi desenvolvimento em conjunto com os colegas Isabele Santos Scherdien e Thiago Dias Mazzoni para a diciplina de Redes de Computadores Administrada pelo Professor Dr.GUILHERME RIBEIRO CORRÊA
+
+Esse projeto foi desenvolvimento em conjunto com os colegas:
+
+Isabele Santos Scherdien
+
+Thiago Dias Mazzoni
+
+Diciplina de Redes de Computadores
+
+Administrada pelo Professor Dr.GUILHERME RIBEIRO CORRÊA
+
 ---
 
 ## 🚀 Requisitos
@@ -16,13 +26,13 @@ Esse projeto foi desenvolvimento em conjunto com os colegas Isabele Santos Scher
 
 > A porta TCP `5000` é usada para comunicação entre peers.
 
-## ▶️ No Windows:
+### ▶️ No Windows:
 
 1. Abra o PowerShell como Administrador
 2. Execute:
    ```powershell
    New-NetFirewallRule -DisplayName "UNO P2P TCP 5000" -Direction Inbound -LocalPort 5000 -Protocol TCP -Action Allow
-## ▶️ No Ubuntu/Linux:
+### ▶️ No Ubuntu/Linux:
    ```
    sudo ufw allow 5000/tcp
    ```
@@ -30,7 +40,7 @@ Verifique se o ufw está ativo com:
    ```
   sudo ufw status
    ```
-##📥 Instalação
+## 📥 Instalação
 
 Clone o projeto ou copie os arquivos:
 
@@ -42,7 +52,7 @@ Clone o projeto ou copie os arquivos:
    cd uno-p2p
 ```
 
-▶️Certifique-se de ter os seguintes arquivos no mesmo diretório:
+### ▶️Certifique-se de ter os seguintes arquivos no mesmo diretório:
    
    >main.py
    
@@ -57,11 +67,11 @@ Cada jogador deve executar o jogo em uma máquina diferente ou em diferentes ter
 
 Para descobrir o ip da máquina utilize:
 
-▶️ No Ubuntu/Linux:
+### ▶️ No Ubuntu/Linux:
 
    ``` ip```
 
-▶️ No Windows:
+### ▶️ No Windows:
 
    ``` ipconfig```
 
@@ -88,7 +98,7 @@ No segundo computador ou terminal:
 
    >Informe o IP do primeiro peer e a porta 5000
 
-### 🎮 Menu do Jogo
+## 🎮 Menu do Jogo
 Após inicializar, o jogo oferece este menu:
 
 ## === MENU ===
@@ -111,12 +121,12 @@ Após inicializar, o jogo oferece este menu:
 
 >Use 6 para encerrar o programa
 
-### 📡 Comunicação
+## 📡 Comunicação
 O jogo utiliza TCP sockets com troca de mensagens codificadas em JSON
 
 Mensagens são enviadas entre todos os peers conectados, sem servidor central
 
-### 🛠 Problemas comuns
+## 🛠 Problemas comuns
 | Erro             | Possível causa                          | Solução                                                |
 | ---------------- | --------------------------------------- | ------------------------------------------------------ |
 | Conexão recusada | IP ou porta incorretos                  | Verifique se o peer está ativo e com firewall liberado |
