@@ -8,7 +8,7 @@ Isabele Santos Scherdien
 
 Thiago Dias Mazzoni
 
-Diciplina de Redes de Computadores
+Diciplina de Redes de Computadores do Curso de Ciências da Computação
 
 Administrada pelo Professor Dr.GUILHERME RIBEIRO CORRÊA
 
